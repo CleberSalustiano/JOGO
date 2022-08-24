@@ -1,37 +1,59 @@
-body {
-  background: darksalmon;
+* {
+  padding: 0;
 }
 
-.fill {
-  /* background-image: url('https://source.unsplash.com/random/150x150'); */
+body {
+  background: darksalmon;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font: 500;
-  font-size: 20px;
-  height: 150px;
-  width: 150px;
-  cursor: pointer;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+}
+
+#answers, #options {
+  flex-direction: column;
 }
 
 .hold {
   border: solid 5px #ccc;
 }
 
-.empty {
+.empty, .fill {
   display: flex;
   justify-content: center;
   align-items: center;
   font: 500;
   font-size: 20px;
-  height: 160px;
-  width: 160px;
+  height: 70px;
+  width: 70px;
   margin: 10px;
   border: solid 3px salmon;
   background: white;
 }
 
+.empty > .fill {
+  /* background-image: url('https://source.unsplash.com/random/150x150'); */
+  display: flex;
+  flex: 5;
+  border: none;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font: 500;
+  background: none;
+  font-size: 20px;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+
 .hovered {
   background: #f4f4f4;
   border-style: dashed;
+}
+
+.invisible {
+  display: none;
 }
