@@ -1,161 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Jogo do Alfabeto</title>
-  </head>
-  <body>
-    <div class="empty">
-      <div class="fill" draggable="true">a</div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Jogo do Alfabeto</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Jogo do Alfabeto</h1>
+			</header>
+			<section id="answers">
+				<section id="coluna1">
+					<div class="empty" id="A"></div>
+					<div class="empty" id="B"></div>
+					<div class="empty" id="C"></div>
+					<div class="empty" id="D"></div>
+					<div class="empty" id="E"></div>
+					<div class="empty" id="F"></div>
+					<div class="empty" id="G"></div>
+					<div class="empty" id="H"></div>
+					<div class="empty" id="I"></div>
+					<div class="empty" id="J"></div>
+					<div class="empty" id="K"></div>
+					<div class="empty" id="L"></div>
+					<div class="empty" id="M"></div>
+				</section>
+				<section id="coluna2">
+					<div class="empty" id="N"></div>
+					<div class="empty" id="O"></div>
+					<div class="empty" id="P"></div>
+					<div class="empty" id="Q"></div>
+					<div class="empty" id="R"></div>
+					<div class="empty" id="S"></div>
+					<div class="empty" id="T"></div>
+					<div class="empty" id="U"></div>
+					<div class="empty" id="V"></div>
+					<div class="empty" id="W"></div>
+					<div class="empty" id="X"></div>
+					<div class="empty" id="Y"></div>
+					<div class="empty" id="Z"></div>
+				</section>
+			</section>
+			<section id="options">
+				<section>
+					<div class="fill" draggable="true">B</div>
+					<div class="fill" draggable="true">H</div>
+					<div class="fill" draggable="true">T</div>
+					<div class="fill" draggable="true">R</div>
+					<div class="fill" draggable="true">J</div>
+					<div class="fill" draggable="true">V</div>
+					<div class="fill" draggable="true">Q</div>
+					<div class="fill" draggable="true">E</div>
+					<div class="fill" draggable="true">I</div>
+					<div class="fill" draggable="true">F</div>
+					<div class="fill" draggable="true">W</div>
+					<div class="fill" draggable="true">S</div>
+					<div class="fill" draggable="true">G</div>
+				</section>
+				<section>
+					<div class="fill" draggable="true">Y</div>
+					<div class="fill" draggable="true">L</div>
+					<div class="fill" draggable="true">C</div>
+					<div class="fill" draggable="true">K</div>
+					<div class="fill" draggable="true">N</div>
+					<div class="fill" draggable="true">O</div>
+					<div class="fill" draggable="true">X</div>
+					<div class="fill" draggable="true">Z</div>
+					<div class="fill" draggable="true">D</div>
+					<div class="fill" draggable="true">A</div>
+					<div class="fill" draggable="true">M</div>
+					<div class="fill" draggable="true">U</div>
+					<div class="fill" draggable="true">P</div>
+				</section>
+			</section>
+			<section id="button">
+				<div id="validar" onclick=validar()>
+					Validar
+				</div>
+			</section>
+		</main>
 
-    <div class="empty"></div>
-
-    <div class="empty"></div>
-
-    <div class="empty"></div>
-
-    <div class="empty"></div>
-    <script src="script.js"></script>
-  </body>
+		<script src="script.js"></script>
+	</body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Jogo do Alfabeto</title>
-  </head>
-  <body>
-    <section id="answer">
-      <section id="coluna1">
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-      </section>
-      <section id="coluna2">
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-      </section>
-    </section>
-    <section id="options">
-      <section>
-        <div class="empty">
-          <div class="fill">A</div>
-        </div>
-        <div class="empty">
-          <div class="fill">B</div>
-        </div>
-        <div class="empty">
-          <div class="fill">C</div>
-        </div>
-        <div class="empty">
-          <div class="fill">D</div>
-        </div>
-        <div class="empty">
-          <div class="fill">E</div>
-        </div>
-        <div class="empty">
-          <div class="fill">F</div>
-        </div>
-        <div class="empty">
-          <div class="fill">G</div>
-        </div>
-        <div class="empty">
-          <div class="fill">H</div>
-        </div>
-        <div class="empty">
-          <div class="fill">I</div>
-        </div>
-        <div class="empty">
-          <div class="fill">J</div>
-        </div>
-        <div class="empty">
-          <div class="fill">K</div>
-        </div>
-        <div class="empty">
-          <div class="fill">L</div>
-        </div>
-        <div class="empty">
-          <div class="fill">M</div>
-        </div>
-      </section>
-      <section>
-        <div class="empty">
-          <div class="fill">N</div>
-        </div>
-        <div class="empty">
-          <div class="fill">O</div>
-        </div>
-        <div class="empty">
-          <div class="fill">P</div>
-        </div>
-        <div class="empty">
-          <div class="fill">Q</div>
-        </div>
-        <div class="empty">
-          <div class="fill">R</div>
-        </div>
-        <div class="empty">
-          <div class="fill">S</div>
-        </div>
-        <div class="empty">
-          <div class="fill">T</div>
-        </div>
-        <div class="empty">
-          <div class="fill">U</div>
-        </div>
-        <div class="empty">
-          <div class="fill">V</div>
-        </div>
-        <div class="empty">
-          <div class="fill">W</div>
-        </div>
-        <div class="empty">
-          <div class="fill">X</div>
-        </div>
-        <div class="empty">
-          <div class="fill">Y</div>
-        </div>
-        <div class="empty">
-          <div class="fill">Z</div>
-        </div>
-      </section>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
-</html> -->

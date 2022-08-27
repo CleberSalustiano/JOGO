@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Jogo da Sílaba</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Jogo da Sílaba</h1>
+				<p>Fase 2</p>
+			</header>
+			
+			<section id="options">
+				<section>
+					<div class="fill" draggable="true">CA</div>
+					<div class="fill" draggable="true">SA</div>
+					<div class="fill" draggable="true">LA'</div>
+				</section>
+				<section>
+					<div class="fill" draggable="true">LU</div>
+					<div class="fill" draggable="true">BA</div>
+					<div class="fill" draggable="true">BO</div>
+				</section>
+				<section>
+					<img src="../../assets/cavalo.png" alt="bola">
+				</section>
+				<section>
+					<div class="fill" draggable="true">VA</div>
+					<div class="fill" draggable="true">TO</div>
+					<div class="fill" draggable="true">TA</div>
+				</section>
+				<section>
+					<div class="fill" draggable="true">LE</div>
+					<div class="fill" draggable="true">VI</div>
+					<div class="fill" draggable="true">LO</div>
+				</section>
+			</section>
+			<section id="answers">
+				<section>
+					<div class="empty" id="CA"></div>
+					<div class="empty" id="VA"></div>
+					<div class="empty" id="LO"></div>
+				</section>
+			</section>
+
+			<section id="button">
+				<div id="validar" onclick=validar()>
+					Validar
+				</div>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
