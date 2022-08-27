@@ -3,9 +3,18 @@
 }
 
 body {
-  background: darksalmon;
+  background: rgb(150, 208, 245);
+  padding: 0;
+  margin: 0;
+}
+
+main  {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
@@ -20,7 +29,7 @@ section {
   border: solid 5px #ccc;
 }
 
-.empty, .fill {
+.empty, .fill, .withFill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,11 +38,11 @@ section {
   height: 70px;
   width: 70px;
   margin: 10px;
-  border: solid 3px salmon;
+  border: solid 3px rgb(152, 150, 245);
   background: white;
 }
 
-.empty > .fill {
+.withFill > .fill {
   /* background-image: url('https://source.unsplash.com/random/150x150'); */
   display: flex;
   flex: 5;
@@ -49,6 +58,10 @@ section {
   cursor: pointer;
 }
 
+.withFill {
+  border-color: rgb(89, 196, 96);
+}
+
 .hovered {
   background: #f4f4f4;
   border-style: dashed;
@@ -56,4 +69,10 @@ section {
 
 .invisible {
   display: none;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin: 20px 0;
 }
