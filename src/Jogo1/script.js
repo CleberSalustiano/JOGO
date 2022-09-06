@@ -78,5 +78,4 @@ function validar() {
 		}
 	}
 
-	console.log(pontuação);
 }

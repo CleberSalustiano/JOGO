@@ -63,20 +63,20 @@ function dragLeave() {
 	}
 }
 
-function validar() {
-	pontuação = 0;
-	const withFills = document.querySelectorAll(".withFill");
-	for (const withFill of withFills) {
-		if (
-			withFill.children[0] !== undefined &&
-			withFill.children[0].textContent === withFill.id
-		) {
-			pontuação++;
-			withFill.className += " correct"
-		} else {
-			withFill.className += " wrong"
-		}
-	}
+// function validar() {
+// 	pontuação = 0;
+// 	const withFills = document.querySelectorAll(".withFill");
+// 	for (const withFill of withFills) {
+// 		if (
+// 			withFill.children[0] !== undefined &&
+// 			withFill.children[0].textContent === withFill.id
+// 		) {
+// 			pontuação++;
+// 			withFill.className += " correct"
+// 		} else {
+// 			withFill.className += " wrong"
+// 		}
+// 	}
 
-	console.log(pontuação);
-}
+// 	console.log(pontuação);
+// }
