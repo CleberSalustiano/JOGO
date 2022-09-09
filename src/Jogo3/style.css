@@ -1,27 +1,59 @@
 * {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
-    background: rgb(150, 188, 245);
-    font-family: "Montserrat";
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
+  background: rgb(150, 188, 245);
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
-    font-size: 50px;
-    margin: 0;
-    position: absolute;
-    top: 200px;
+  font-size: 50px;
+  margin: 0;
+  position: absolute;
+  top: 200px;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+#button {
+  width: calc(95px*13);
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 25vh;
+  right: 25vw;
+}
+
+#validar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+
+  font-weight: 700;
+
+  color: white;
+  background-color: rgb(137, 116, 241);
+  border: rgb(152, 150, 245) 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+#validar:hover {
+  background-color: rgb(141, 140, 241);
+
 }

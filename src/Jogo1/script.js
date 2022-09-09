@@ -62,20 +62,3 @@ function dragLeave() {
 		this.className = "empty";
 	}
 }
-
-function validar() {
-	pontuação = 0;
-	const withFills = document.querySelectorAll(".withFill");
-	for (const withFill of withFills) {
-		if (
-			withFill.children[0] !== undefined &&
-			withFill.children[0].textContent === withFill.id
-		) {
-			pontuação++;
-			withFill.className += " correct"
-		} else {
-			withFill.className += " wrong"
-		}
-	}
-
-}

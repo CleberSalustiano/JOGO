@@ -2,10 +2,10 @@ const tela = document.querySelector("#tela");
 const context = tela.getContext("2d");
 
 const pincel = {
-	ativo: false,
-	movendo: false,
-	pos: { x: 0, y: 0 },
-	posAnterior: null,
+  ativo: false,
+  movendo: false,
+  pos: { x: 0, y: 0 },
+  posAnterior: null,
 };
 
 tela.width = window.innerWidth;
@@ -20,43 +20,43 @@ var imagem = new Image();
 imagem.src = "../assets/palavra_cavalo.png";
 
 imagem.onload = function () {
-	context.drawImage(
-		imagem,
-		window.innerWidth / 2 - imagem.width,
-		window.innerHeight / 2 - imagem.height,
-		832,
-		354
-	);
+  context.drawImage(
+    imagem,
+    window.innerWidth / 2 - imagem.width,
+    window.innerHeight / 2 - imagem.height,
+    832,
+    354
+  );
 };
 
 const Desenhar = (linha) => {
-	context.beginPath();
-	context.moveTo(linha.posAnterior.x, linha.posAnterior.y);
-	context.lineTo(linha.pos.x, linha.pos.y);
-	context.stroke();
+  context.beginPath();
+  context.moveTo(linha.posAnterior.x, linha.posAnterior.y);
+  context.lineTo(linha.pos.x, linha.pos.y);
+  context.stroke();
 };
 
 tela.onmousedown = () => {
-	pincel.ativo = true;
+  pincel.ativo = true;
 };
 tela.onmouseup = () => {
-	pincel.ativo = false;
+  pincel.ativo = false;
 };
 
 tela.onmousemove = (event) => {
-	pincel.pos.x = event.clientX;
-	pincel.pos.y = event.clientY;
-	pincel.movendo = true;
+  pincel.pos.x = event.clientX;
+  pincel.pos.y = event.clientY;
+  pincel.movendo = true;
 };
 
 const ciclo = () => {
-	if (pincel.ativo && pincel.movendo && pincel.posAnterior) {
-		Desenhar({ pos: pincel.pos, posAnterior: pincel.posAnterior });
-		pincel.movendo = false;
-	}
-	pincel.posAnterior = { ...pincel.pos };
+  if (pincel.ativo && pincel.movendo && pincel.posAnterior) {
+    Desenhar({ pos: pincel.pos, posAnterior: pincel.posAnterior });
+    pincel.movendo = false;
+  }
+  pincel.posAnterior = { ...pincel.pos };
 
-	setTimeout(ciclo, 10);
+  setTimeout(ciclo, 10);
 };
 
 ciclo();

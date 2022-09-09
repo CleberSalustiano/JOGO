@@ -1,0 +1,85 @@
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(150, 188, 245);
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.validar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 20px;
+
+  color: white;
+  background-color: rgb(137, 116, 241);
+  border: rgb(152, 150, 245) 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.validar:hover {
+  background-color: rgb(141, 140, 241);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(238, 238, 238);
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#form div:first-child {
+  margin-bottom: 80px;
+  width: 500px;
+  padding: 0;
+}
+
+input {
+  width: 492px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+#form div:last-child {
+  display: flex;
+}
+
+#comecar {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.276);
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
