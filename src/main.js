@@ -114,6 +114,8 @@ function iniciarJogo() {
   }, 1000);
   const button = document.querySelector("#buttonJ3");
   button.style.cssText = "display: flex; bottom: 25vh";
+  const header = document.querySelector("#jogo3")
+  header.style.cssText = "display: hidden; top: -100vh";
 }
 
 function enviaDados() {

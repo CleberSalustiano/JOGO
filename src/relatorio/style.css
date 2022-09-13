@@ -1,0 +1,32 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: whitesmoke;
+  width: 90vw;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+section {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#button{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#button .validar {
+  margin: 20px 0;
+}
