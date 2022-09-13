@@ -119,4 +119,8 @@ function enviaDados() {
 }
 
 recupera();
-console.log(jogador, resultadoJogo1, resultadoJogo2, resultadoJogo3);
+// console.log(jogador, resultadoJogo1, resultadoJogo2, resultadoJogo3);
+
+function salvar(jogador, resultadoJogo1, resultadoJogo2, resultadoJogo3) {
+  
+}
