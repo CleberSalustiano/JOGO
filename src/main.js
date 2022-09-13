@@ -64,7 +64,7 @@ function validar(nomeJogo) {
     sessionStorage.setItem("resultadoJogo3", JSON.stringify(resultadoJogo3));
     enviaDados();
     sessionStorage.clear();
-    // window.location.href = "../index.html"
+    window.location.href = "../index.html"
   }
 }
 
@@ -112,15 +112,36 @@ function iniciarJogo() {
   cronometro = setInterval(() => {
     tempo++;
   }, 1000);
+  const button = document.querySelector("#buttonJ3");
+  button.style.cssText = "display: flex; bottom: 25vh";
 }
 
 function enviaDados() {
-  // fazer envio de dados usando fetch
+  let url = 'https://sheetdb.io/api/v1/q47a20ioaj58g';
+  let username = 'glviqtoo';
+  let password = 'mctz4qdq56lanz4yxqhq';
+
+  let headers = new Headers();
+  let data = new FormData();
+  data.append("idade", jogador.idade) 
+  data.append("J1_qtd_acertos", resultadoJogo1.pontuacao)
+  data.append("J1_tempo", resultadoJogo1.tempo)  
+  data.append("J2_f1_qtd_acertos", resultadoJogo2.fase1.pontuacao)
+  data.append("J2_f1_tempo", resultadoJogo2.fase1.tempo)
+  data.append("J2_f2_qtd_acertos", resultadoJogo2.fase2.pontuacao)  
+  data.append("J2_f2_tempo", resultadoJogo2.fase2.tempo )  
+  data.append("J2_f3_qtd_acertos", resultadoJogo2.fase3.pontuacao)
+  data.append("J2_f3_tempo", resultadoJogo2.fase3.tempo)
+  data.append("J3_tempo", resultadoJogo3.tempo)
+  
+
+  headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
+
+  fetch(url, {method:'POST',
+          headers: headers,
+          body: data})
+  .then(response => response.json())
+  .then(json => console.log(json));
 }
 
 recupera();
-// console.log(jogador, resultadoJogo1, resultadoJogo2, resultadoJogo3);
-
-function salvar(jogador, resultadoJogo1, resultadoJogo2, resultadoJogo3) {
-  
-}

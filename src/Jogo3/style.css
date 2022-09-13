@@ -26,12 +26,12 @@ header {
   font-weight: 700;
 }
 
-#button {
+#buttonJ3 {
   width: calc(95px*13);
-  display: flex;
+  display: hidden;
   justify-content: end;
   position: absolute;
-  bottom: 25vh;
+  bottom: 100vh;
   right: 25vw;
 }
 
