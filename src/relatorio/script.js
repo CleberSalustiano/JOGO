@@ -10,7 +10,6 @@ headers.set("Authorization", "Basic " + btoa(username + ":" + password));
 fetch(url, { method: "GET", headers: headers })
   .then((response) => response.json())
   .then((arrayAlunos) => {
-    console.log(arrayAlunos);
     let count = 1;
     let htmlTable = "";
     let idade = 0,
