@@ -99,7 +99,7 @@ function recupera() {
 
 function getIdade() {
   const input = document.querySelector("#idade");
-  if (input.value === " ") {
+  if (input.value === "") {
     window.alert("Precisar colocar a idade do jogador");
   } else {
     jogador.idade = input.value;
