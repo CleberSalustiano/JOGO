@@ -148,7 +148,20 @@ function enviaDados() {
       sessionStorage.clear();
       window.location.href = "../index.html";
     });
-
+  
 }
 
 recupera();
+
+J1_tempo = "72"
+console.log(+J1_tempo >= 60
+  ? +J1_tempo - 60 >= 10
+    ? Math.trunc(+J1_tempo / 60) +
+      ":" +
+      (+J1_tempo - 60)
+    : Math.trunc(+J1_tempo / 60) +
+      ":0" +
+      (+J1_tempo - 60)
+  : +Math.trunc(+J1_tempo) >= 10
+  ? "0:" + Math.trunc(+J1_tempo)
+  : "0:0" + Math.trunc(+J1_tempo))
