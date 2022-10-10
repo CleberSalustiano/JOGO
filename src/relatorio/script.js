@@ -44,7 +44,7 @@ fetch(url, { method: "GET", headers: headers })
       <td>${
         imprimeTempo(aluno.J2_f1_tempo)
       }</td>
-      <td>${((+aluno.J2_f1_qtd_acertos / 4) * 100).toPrecision(3)}</td>
+      <td>${((+aluno.J2_f1_qtd_acertos / 3) * 100).toPrecision(3)}</td>
       <td>${
         imprimeTempo(aluno.J2_f2_tempo)
       }</td>
@@ -52,7 +52,7 @@ fetch(url, { method: "GET", headers: headers })
       <td>${
         imprimeTempo(aluno.J2_f3_tempo)
       }</td>
-      <td>${((+aluno.J2_f3_qtd_acertos / 3) * 100).toPrecision(3)}</td>
+      <td>${((+aluno.J2_f3_qtd_acertos / 4) * 100).toPrecision(3)}</td>
       <td>${
         imprimeTempo(aluno.J3_tempo)
       }</td>
@@ -101,11 +101,11 @@ fetch(url, { method: "GET", headers: headers })
       </td>
       <td>${((+J1_qtd_acertos / 26) * 100).toPrecision(3)}</td>
       <td>${imprimeTempo(J2_f1_tempo)}</td>
-      <td>${((+J2_f1_qtd_acertos / 4) * 100).toPrecision(3)}</td>
+      <td>${((+J2_f1_qtd_acertos / 3) * 100).toPrecision(3)}</td>
       <td>${imprimeTempo(J2_f2_tempo)}</td>
       <td>${((+J2_f2_qtd_acertos / 4) * 100).toPrecision(3)}</td>
       <td>${imprimeTempo(J2_f3_tempo)}</td>
-      <td>${((+J2_f3_qtd_acertos / 3) * 100).toPrecision(3)}</td>
+      <td>${((+J2_f3_qtd_acertos / 4) * 100).toPrecision(3)}</td>
       <td>${imprimeTempo(J3_tempo)}</td>
     </tr>
   </table>
