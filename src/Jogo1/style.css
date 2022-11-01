@@ -69,6 +69,10 @@ section {
   border-color: rgb(100, 186, 218);
 }
 
+#options  .withFill {
+  border: solid 3px rgb(152, 150, 245);
+}
+
 .hovered {
   background: #f4f4f4;
   border-style: dashed;

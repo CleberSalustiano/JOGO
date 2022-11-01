@@ -83,3 +83,12 @@ input {
   align-items: center;
   justify-content: center;
 }
+
+main > div:first-child {
+  position: absolute;
+  bottom: 0;
+}
+
+main > div:first-child > img {
+  width: 200px;
+}
