@@ -1,7 +1,12 @@
 const fills = document.querySelectorAll(".fill");
 const empties = document.querySelectorAll(".empty");
+const emptiesWithFIll = document.querySelectorAll("#options .empty")
+
 let pontuação;
 
+for (const empty of emptiesWithFIll) {
+  empty.className = "withFill";
+}
 // Fill listeners
 for (const fill of fills) {
 	fill.addEventListener("dragstart", dragStart);

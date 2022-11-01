@@ -36,6 +36,10 @@ section {
   flex-direction: column;
 }
 
+#options  .withFill {
+  border: solid 3px rgb(152, 150, 245);
+}
+
 .hold {
   border: solid 5px #ccc;
 }
